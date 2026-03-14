@@ -4,52 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的網站</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        a {
-            color: #00f;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>歡迎來到我的網站</h1>
+        <h1>歡迎來到我的網站！</h1>
     </header>
     <main>
         <p>這是一個簡單的靜態網站範例。</p>
-        <p>您可以自訂內容，並將其部署到 GitHub Pages 或其他平台。</p>
-        <a href="https://github.com" target="_blank">了解更多關於 GitHub Pages 的資訊</a>
+        <button onclick="showMessage()">點擊我</button>
+        <img src="https://via.placeholder.com/300" alt="示意圖片">
     </main>
     <footer>
         <p>&copy; 2026 我的網站. 保留所有權利。</p>
     </footer>
+    <script>
+        function showMessage() {
+            alert("感謝您拜訪我的網站！");
+        }
+    </script>
 </body>
 </html>
