@@ -1,32 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VP訂購系統</title>
+    <title>VP整合型多創業平台</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>歡迎來到VP訂購系統！</h1>
+        <h1>VP整合型多創業平台</h1>
+        <p>我們提供多元化的商品，滿足您的需求！</p>
     </header>
     <main>
-        <p>這是一個簡單的靜態網站範例。</p>
-        <button onclick="showMessage()">點擊我</button>
-        <img src="https://via.placeholder.com/300" alt="示意圖片">
+        <!-- 商品展示區 -->
+        <section id="products">
+            <h2>我們的商品</h2>
+            <div class="product-category">
+                <h3>微代謝保養品</h3>
+                <div class="product">
+                    <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/100899231/FfGIyzPwSOeXAVvF.jpg" alt="金箔唇萃精華油">
+                    <h4>金箔唇萃精華油 (P509)</h4>
+                    <p>價格：$380</p>
+                </div>
+                <div class="product">
+                    <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/100899231/btOjTHlOYfLkqmmi.jpg" alt="亮膚防護霜7A">
+                    <h4>亮膚防護霜7A (P506)</h4>
+                    <p>價格：$1180</p>
+                </div>
+                <div class="product">
+                    <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/100899231/LcBCw08rwRQaJ2y1.jpg" alt="超導緊緻面膜">
+                    <h4>超導緊緻面膜 (P303)</h4>
+                    <p>價格：$799</p>
+                </div>
+                <div class="product">
+                    <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/100899231/x1C3san9cERcVdal.jpg" alt="玻色因時光面膜">
+                    <h4>玻色因時光面膜 (P508)</h4>
+                    <p>價格：$799</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 訂購表單 -->
+        <section id="order-form">
+            <h2>訂購表單</h2>
+            <form action="https://example.com/submit-order" method="post">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="phone">電話：</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+                <label for="address">地址：</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+                <br>
+                <label for="product">選擇商品：</label>
+                <select id="product" name="product" required>
+                    <option value="P509">金箔唇萃精華油 - $380</option>
+                    <option value="P506">亮膚防護霜7A - $1180</option>
+                    <option value="P303">超導緊緻面膜 - $799</option>
+                    <option value="P508">玻色因時光面膜 - $799</option>
+                </select>
+                <br>
+                <button type="submit" class="submit-button">提交訂單</button>
+            </form>
+        </section>
+
+        <!-- 聯絡我們 -->
+        <section id="contact">
+            <h2>聯絡我們</h2>
+            <p>電子郵件：example@vpplatform.com</p>
+            <p>電話：+886-123-456-789</p>
+            <p>地址：台北市信義區XX路XX號</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2026 VP整合型多方平台. 保留所有權利。</p>
+        <p>&copy; 2026 VP整合型多創業平台. 保留所有權利。</p>
     </footer>
-    <script>
-        function showMessage() {
-            alert("感謝您VP整合型多方平台！");
-        }
-    </script>
 </body>
 </html>
-<nav>
-    <a href="#section1">關於我們</a>
-    <a href="#section2">服務項目</a>
-    <a href="#section3">聯絡我們</a>
-</nav>
